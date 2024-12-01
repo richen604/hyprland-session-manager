@@ -11,7 +11,8 @@
         "build": "bun build ./src/index.ts --outdir ./dist",
         "start": "bun run src/index.ts",
         "test": "bun test",
-        "dev": "bun --watch src/index.ts"
+        "dev": "bun --watch src/index.ts",
+        "prepare": "husky"
     },
     "keywords": [
         "hyprland",
@@ -25,7 +26,13 @@
         "commander": "^11.0.0"
     },
     "devDependencies": {
+        "@commitlint/cli": "^19.6.0",
+        "@commitlint/config-conventional": "^19.6.0",
+        "@types/node": "^20.0.0",
         "bun-types": "latest",
-        "@types/node": "^20.0.0"
+        "husky": "^9.1.7",
+        "@semantic-release/changelog": "^6.0.3",
+        "@semantic-release/git": "^10.0.1",
+        "semantic-release": "^22.0.12"
     }
 }

@@ -93,7 +93,17 @@ bun build
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+3. Commit your changes following [Conventional Commits](https://www.conventionalcommits.org/) specification:
+   ```bash
+   # Examples:
+   git commit -m 'feat: add new session backup feature'
+   git commit -m 'fix: resolve workspace restoration issue'
+   git commit -m 'docs: update installation instructions'
+   ```
+   The project uses semantic-release for automatic version management. Commit messages following the Conventional Commits specification will trigger automatic version updates:
+   - `feat:` - Minor version bump (new feature)
+   - `fix:` - Patch version bump (bug fix)
+   - `BREAKING CHANGE:` - Major version bump
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
