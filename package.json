@@ -1,0 +1,31 @@
+{
+    "name": "hyprland-session-manager",
+    "version": "0.1.0",
+    "description": "A command-line tool for managing Hyprland window manager sessions",
+    "main": "dist/index.js",
+    "type": "module",
+    "bin": {
+        "hsm": "./dist/index.js"
+    },
+    "scripts": {
+        "build": "bun build ./src/index.ts --outdir ./dist",
+        "start": "bun run src/index.ts",
+        "test": "bun test",
+        "dev": "bun --watch src/index.ts"
+    },
+    "keywords": [
+        "hyprland",
+        "window-manager",
+        "session-manager",
+        "linux"
+    ],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "commander": "^11.0.0"
+    },
+    "devDependencies": {
+        "bun-types": "latest",
+        "@types/node": "^20.0.0"
+    }
+}
