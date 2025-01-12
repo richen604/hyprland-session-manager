@@ -30,9 +30,6 @@
         "@commitlint/config-conventional": "^19.6.0",
         "@types/node": "^20.0.0",
         "bun-types": "latest",
-        "husky": "^9.1.7",
-        "@semantic-release/changelog": "^6.0.3",
-        "@semantic-release/git": "^10.0.1",
-        "semantic-release": "^22.0.12"
+        "husky": "^9.1.7"
     }
 }
